@@ -2,7 +2,7 @@
 title: GetEntityData 
 parent: Shared Exports 
 grand_parent: MRC TV 
-layout: home
+
 nav_order: 3
 --- 
 

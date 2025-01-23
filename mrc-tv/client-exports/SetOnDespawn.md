@@ -2,7 +2,7 @@
 title: SetOnDespawn 
 parent: Client Exports 
 grand_parent: MRC TV 
-layout: home
+
 nav_order: 2
 --- 
 #### `SetOnDespawn(id, callback)`
