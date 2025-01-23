@@ -5,7 +5,7 @@ grand_parent: MRC TV
 layout: page
 nav_order: 1 
 --- 
-*** `SetOnSpawn(id, callback)` ***
+* `SetOnSpawn(id, callback)` *
 Sets a spawn handler for an entity.
 
 **Parameters:**

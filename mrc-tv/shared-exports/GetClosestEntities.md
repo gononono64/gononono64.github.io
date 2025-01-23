@@ -5,7 +5,7 @@ layout: page
 grand_parent: MRC TV 
 nav_order: 6
 --- 
-*** `GetClosestEntities(position, radius)` ***
+* `GetClosestEntities(position, radius)` *
 Finds entities within a radius of a given position.
 
 **Parameters:**

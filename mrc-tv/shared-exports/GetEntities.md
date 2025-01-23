@@ -6,7 +6,7 @@ layout: page
 nav_order: 4
 --- 
 
-*** `GetEntities()`***
+* `GetEntities()`*
 Returns all registered entities.
 
 **Returns:**

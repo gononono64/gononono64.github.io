@@ -5,7 +5,7 @@ grand_parent: MRC TV
 layout: page
 nav_order: 2
 --- 
-*** `SetOnDespawn(id, callback)` ***
+* `SetOnDespawn(id, callback)` *
 Sets a despawn handler for an entity.
 
 **Parameters:**
