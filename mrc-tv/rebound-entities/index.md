@@ -1,7 +1,7 @@
 ---
 title: Rebound Entities
 has_children: true
-parent: MRC Scripts
+parent: MRC TV
 layout: page
 nav_order: 1
 ---
