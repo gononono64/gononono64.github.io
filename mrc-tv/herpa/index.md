@@ -1,6 +1,5 @@
 ---
-title: herpa
-parent: herpa
-grand_parent: MRC TV
+title: This is something
+parent: mrc-tv
 nav_order: 1
 ---
