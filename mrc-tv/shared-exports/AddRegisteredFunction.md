@@ -5,7 +5,7 @@ layout: page
 grand_parent: MRC TV 
 nav_order: 1 
 --- 
-* `AddRegisteredFunction(callback)` *
+## `AddRegisteredFunction(callback)`
 Adds a function to be executed when any entity is registered.
 
 **Parameters:**

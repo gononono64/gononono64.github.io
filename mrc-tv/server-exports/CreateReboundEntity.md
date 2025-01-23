@@ -5,7 +5,7 @@ grand_parent: MRC TV
 layout: page
 nav_order: 1 
 --- 
-* `CreateReboundEntity(data, target)` *
+## `CreateReboundEntity(data, target)`
 Creates a new synced entity.
 
 **Parameters:**

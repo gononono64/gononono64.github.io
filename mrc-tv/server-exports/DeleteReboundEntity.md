@@ -5,7 +5,8 @@ grand_parent: MRC TV
 layout: page
 nav_order: 2
 --- 
-* `DeleteReboundEntity(id)` *
+## `DeleteReboundEntity(id)`
+
 Removes a synced entity.
 
 **Parameters:**

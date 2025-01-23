@@ -6,7 +6,7 @@ layout: page
 nav_order: 3
 --- 
 
-* `GetEntityData(id)` *
+## `GetEntityData(id)` 
 Fetches data for a specific entity.
 
 **Parameters:**
