@@ -1,6 +1,7 @@
 ---
 title: Entity Data
 parent: MRC TV
+layout: page
 has_children: true
 nav_order: 1
 ---

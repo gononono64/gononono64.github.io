@@ -2,7 +2,7 @@
 title: GetEntitiesByModel 
 parent: Shared Exports 
 grand_parent: MRC TV 
-
+layout: page
 nav_order: 7
 --- 
 #### `GetEntitiesByModel(model)`
