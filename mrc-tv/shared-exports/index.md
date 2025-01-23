@@ -1,13 +1,12 @@
 ---
 title: Shared Exports 
 parent: MRC TV
-
 has_children: true
 nav_order: 2
 ---
 
-<!-- # MRC Scripts Documentation
-
+# MRC Scripts Documentation
+<!-- 
 Welcome to the official documentation for **MRC Scripts**, a suite of premium FiveM resources designed to enhance your server with unique, high-quality functionality. This documentation is here to guide you through installation, configuration, and getting the most out of your purchases.
 
 ## About MRC Scripts
