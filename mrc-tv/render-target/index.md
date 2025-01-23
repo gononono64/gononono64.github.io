@@ -1,9 +1,9 @@
 ---
-title: Rebound Entities
+title: Render Targets
 has_children: true
 parent: MRC TV
 layout: page
-nav_order: 2
+nav_order: 1
 ---
 # MRC Scripts Documentation
 <!--
@@ -19,7 +19,7 @@ All scripts are available for purchase on [Tebex.io](https://mrcscripts.tebex.io
 ## Quick Links
 
 - **[Home](index.md):** Learn about MRC Scripts and get started.
-- **[Rebound Entities](mrc-tv.md):** Explore the Rebound Entities module and its features.
+- **[Render Targets](mrc-tv.md):** Explore the Render Targets module and its features.
 - **[Purchase Scripts](https://mrcscripts.tebex.io/):** Visit our store to purchase additional MRC resources.
 - **[Discord](https://discord.gg/2GJuasYVf4):** Join our Discord server for community-driven help and updates.
 
