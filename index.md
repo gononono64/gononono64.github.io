@@ -11,33 +11,21 @@ Welcome to the official documentation for **MRC Scripts**, a suite of premium Fi
 
 MRC Scripts are created with a focus on performance, customization, and reliability. Whether you're looking for immersive gameplay features, innovative mechanics, or streamlined server management tools, MRC Scripts have something to offer.
 
-All scripts are available for purchase on [Tebex.io](https://tebex.io), ensuring secure and hassle-free transactions.
+All scripts are available for purchase on [Tebex.io](https://mrcscripts.tebex.io/), ensuring secure and hassle-free transactions.
 
-### Features of MRC Scripts
-
-- **Optimized Performance:** Lightweight code built for smooth server operation.
-- **Customizability:** Configurable options to suit your server’s theme and requirements.
-- **Modular Design:** Choose and integrate only the features you need.
-- **Detailed Documentation:** Easy-to-follow guides for installation and setup.
 
 ## Quick Links
 
 - **[Home](index.md):** Learn about MRC Scripts and get started.
 - **[MRC TV](mrc-tv.md):** Explore the MRC TV module and its features.
-- **[Purchase Scripts](https://your-tebex-store-link):** Visit our store to purchase additional MRC resources.
-
-## Getting Started
-
-1. Purchase the desired script from [Tebex.io](https://your-tebex-store-link).
-2. Download the resource package and upload it to your server.
-3. Follow the setup guides provided in this documentation.
-4. Customize the script’s configuration files as needed.
+- **[Purchase Scripts](https://mrcscripts.tebex.io/):** Visit our store to purchase additional MRC resources.
+- **[Discord](https://discord.gg/2GJuasYVf4):** Join our Discord server for community-driven help and updates.
 
 ## Support
 
 If you encounter any issues or have questions, feel free to reach out through:
-- **Tebex support tickets** for purchase-related inquiries.
-- Our **[Discord server](https://discord.gg/your-discord-link)** for community-driven help and updates.
+- Our **[Discord](https://discord.gg/2GJuasYVf4)** 
+- Or Email us at [MRC Scripts](mailto: mrc.scripts@gmail.com)
 
 ## Contributing
 
