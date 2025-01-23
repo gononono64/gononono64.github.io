@@ -5,7 +5,7 @@ layout: page
 grand_parent: MRC TV 
 nav_order: 5
 --- 
-#### `GetClosestEntity(position)`
+*** `GetClosestEntity(position)` ***
 Finds the nearest entity to a given position.
 
 **Parameters:**

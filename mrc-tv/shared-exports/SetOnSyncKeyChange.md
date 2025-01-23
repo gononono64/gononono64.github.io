@@ -5,7 +5,7 @@ grand_parent: MRC TV
 layout: page
 nav_order: 2
 --- 
-#### `SetOnSyncKeyChange(entityData, callback)`
+*** `SetOnSyncKeyChange(entityData, callback)` ***
 Sets a handler for entity data changes.
 
 **Parameters:**
