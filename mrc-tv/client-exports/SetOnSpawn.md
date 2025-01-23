@@ -2,7 +2,7 @@
 title: SetOnSpawn 
 parent: Client Exports 
 grand_parent: MRC TV 
-layout: default
+layout: home
 nav_order: 1 
 --- 
 #### `SetOnSpawn(id, callback)`

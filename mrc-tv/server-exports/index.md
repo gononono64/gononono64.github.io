@@ -1,6 +1,6 @@
 ---
 title: Server Exports
 parent: MRC TV
-layout: default
+layout: home
 nav_order: 1
 ---
