@@ -2,7 +2,6 @@
 title: DeleteReboundEntity 
 parent: Server Exports 
 grand_parent: MRC TV 
-layout: home
 nav_order: 2
 --- 
 #### `DeleteReboundEntity(id)`
