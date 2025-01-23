@@ -2,7 +2,7 @@
 title: SetOnSyncKeyChange 
 parent: Shared Exports 
 grand_parent: MRC TV 
-nav_order: 1 
+nav_order: 2
 --- 
 #### `SetOnSyncKeyChange(entityData, callback)`
 Sets a handler for entity data changes.

@@ -3,7 +3,7 @@ title: GetEntitiesByModel
 parent: Shared Exports 
 grand_parent: MRC TV 
 layout: default
-nav_order: 1 
+nav_order: 7
 --- 
 #### `GetEntitiesByModel(model)`
 Retrieves entities by their model.

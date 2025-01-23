@@ -3,7 +3,7 @@ title: GetClosestEntities
 parent: Shared Exports 
 layout: default
 grand_parent: MRC TV 
-nav_order: 1 
+nav_order: 6
 --- 
 #### `GetClosestEntities(position, radius)`
 Finds entities within a radius of a given position.

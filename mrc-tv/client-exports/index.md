@@ -3,8 +3,7 @@ title: Client Exports
 parent: MRC TV
 layout: default
 has_children: true
-layout: default
-nav_order: 2
+nav_order: 3
 ---
 
 <!-- # MRC Scripts Documentation

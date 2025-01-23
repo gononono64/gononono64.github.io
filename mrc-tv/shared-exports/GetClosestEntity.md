@@ -3,7 +3,7 @@ title: GetClosestEntity
 parent: Shared Exports 
 layout: default
 grand_parent: MRC TV 
-nav_order: 1 
+nav_order: 5
 --- 
 #### `GetClosestEntity(position)`
 Finds the nearest entity to a given position.

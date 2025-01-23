@@ -3,7 +3,7 @@ title: GetEntities
 parent: Shared Exports 
 grand_parent: MRC TV 
 layout: default
-nav_order: 1 
+nav_order: 4
 --- 
 
 #### `GetEntities()`

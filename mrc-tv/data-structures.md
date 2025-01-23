@@ -1,5 +1,5 @@
 ---
-title: Some Title
+title: Entity Data
 parent: MRC TV
 has_children: true
 nav_order: 1
