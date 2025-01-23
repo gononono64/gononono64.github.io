@@ -2,7 +2,7 @@
 title: GetClosestEntity 
 parent: Shared Exports 
 layout: page
-grand_parent: MRC TV 
+grand_parent: Rebound Entities 
 nav_order: 5
 --- 
 ## `GetClosestEntity(position)`

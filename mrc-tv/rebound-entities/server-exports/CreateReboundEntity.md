@@ -1,7 +1,7 @@
 --- 
 title: CreateReboundEntity 
 parent: Server Exports 
-grand_parent: MRC TV 
+grand_parent: Rebound Entities 
 layout: page
 nav_order: 1 
 --- 

@@ -1,6 +1,6 @@
 ---
 title: Server Exports
-parent: MRC TV
+parent: Rebound Entities
 layout: page
 nav_order: 3
 ---

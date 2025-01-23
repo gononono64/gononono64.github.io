@@ -1,7 +1,7 @@
 --- 
 title: GetEntityData 
 parent: Shared Exports 
-grand_parent: MRC TV 
+grand_parent: Rebound Entities 
 layout: page
 nav_order: 3
 --- 

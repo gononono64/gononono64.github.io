@@ -1,6 +1,6 @@
 ---
 title: Client Exports
-parent: MRC TV
+parent: Rebound Entities
 layout: page
 has_children: true
 nav_order: 4
@@ -20,7 +20,7 @@ All scripts are available for purchase on [Tebex.io](https://mrcscripts.tebex.io
 ## Quick Links
 
 - **[Home](index.md):** Learn about MRC Scripts and get started.
-- **[MRC TV](mrc-tv.md):** Explore the MRC TV module and its features.
+- **[Rebound Entities](mrc-tv.md):** Explore the Rebound Entities module and its features.
 - **[Purchase Scripts](https://mrcscripts.tebex.io/):** Visit our store to purchase additional MRC resources.
 - **[Discord](https://discord.gg/2GJuasYVf4):** Join our Discord server for community-driven help and updates.
 

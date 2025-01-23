@@ -1,13 +1,11 @@
 ---
-title: Shared Exports 
-parent: MRC TV
-layout: page
+title: Rebound Entities
 has_children: true
-nav_order: 2
+layout: page
+nav_order: 1
 ---
-
-## MRC Scripts Documentation
-<!-- 
+# MRC Scripts Documentation
+<!--
 Welcome to the official documentation for **MRC Scripts**, a suite of premium FiveM resources designed to enhance your server with unique, high-quality functionality. This documentation is here to guide you through installation, configuration, and getting the most out of your purchases.
 
 ## About MRC Scripts
@@ -20,7 +18,7 @@ All scripts are available for purchase on [Tebex.io](https://mrcscripts.tebex.io
 ## Quick Links
 
 - **[Home](index.md):** Learn about MRC Scripts and get started.
-- **[MRC TV](mrc-tv.md):** Explore the MRC TV module and its features.
+- **[Rebound Entities](mrc-tv.md):** Explore the Rebound Entities module and its features.
 - **[Purchase Scripts](https://mrcscripts.tebex.io/):** Visit our store to purchase additional MRC resources.
 - **[Discord](https://discord.gg/2GJuasYVf4):** Join our Discord server for community-driven help and updates.
 

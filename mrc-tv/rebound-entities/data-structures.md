@@ -1,6 +1,6 @@
 ---
 title: Entity Data
-parent: MRC TV
+parent: Rebound Entities
 layout: page
 has_children: true
 nav_order: 1
