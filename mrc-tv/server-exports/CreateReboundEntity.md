@@ -2,6 +2,7 @@
 title: CreateReboundEntity 
 parent: Server Exports 
 grand_parent: MRC TV 
+layout: default
 nav_order: 1 
 --- 
 #### `CreateReboundEntity(data, target)`

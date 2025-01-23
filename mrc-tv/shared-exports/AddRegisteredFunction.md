@@ -1,6 +1,7 @@
 --- 
 title: AddRegisteredFunction 
 parent: Shared Exports 
+layout: default
 grand_parent: MRC TV 
 nav_order: 1 
 --- 
@@ -19,3 +20,4 @@ local id = exports['rebound_entities']:AddRegisteredFunction(function(data)
     print(data.id)
 end)
 ```
+

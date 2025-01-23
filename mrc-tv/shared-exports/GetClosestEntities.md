@@ -1,6 +1,7 @@
 --- 
 title: GetClosestEntities 
 parent: Shared Exports 
+layout: default
 grand_parent: MRC TV 
 nav_order: 1 
 --- 
