@@ -1,6 +1,5 @@
 ---
-title: derpa
-parent: herpa
+title: Derpa
+parent: Herpa
 grand_parent: MRC TV
-nav_order: 2
 ---

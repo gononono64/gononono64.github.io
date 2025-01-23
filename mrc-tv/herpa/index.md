@@ -1,5 +1,5 @@
 ---
-title: This is something
-parent: mrc-tv
+title: Herpa
+parent: MRC TV
 nav_order: 1
 ---
