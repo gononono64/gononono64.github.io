@@ -1,5 +1,6 @@
 ---
 title: Shared Exports 
+layout: page
 parent: MRC TV
 has_children: true
 nav_order: 2

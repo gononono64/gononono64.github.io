@@ -1,7 +1,7 @@
 ---
 title: Client Exports
 parent: MRC TV
-
+layout: page
 has_children: true
 nav_order: 4
 ---
