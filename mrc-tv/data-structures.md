@@ -8,6 +8,7 @@ nav_order: 2
 ## Data Structures
 
 ## `entityData`
+Core data structure for managing entities with mrctv.
 
 | Key                 | Type       | Description                                                        |
 |---------------------|------------|--------------------------------------------------------------------|
@@ -24,7 +25,7 @@ nav_order: 2
 
 
 ## `RenderTargetData`
-Core data structure for managing render targets in FiveM.
+Core data structure for managing render targets with mrctv.
 
 # Properties Table
 
