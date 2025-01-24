@@ -39,7 +39,6 @@ Each URL pattern in the `URL_PATTERNS` table is structured as a Lua table contai
 
 Here's an example of how you can create your own custom URL pattern for a platform, say `myvideo.com`:
 
-### Step 1 = Define the URL Pattern
 ```lua
 URL_PATTERNS.myvideo = {
     pattern = "myvideo.com/watch?v=",
