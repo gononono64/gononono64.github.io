@@ -30,7 +30,7 @@ This page describes the configuration settings for the various components in the
     playlist = A list of URLs to media that should be played on the billboard.
 ### Example Configuration:
 Example Configuration:
-```lua
+```
 Config.Billboards = {
     {
         position = vector3(-1299.16, -411.53, 35.7),
@@ -58,7 +58,7 @@ General Properties:
 
 ### Example Configuration for TV Models:
 Example Configuration for TV Models:
-```lua
+```
 Config.Tvs = {
     pickupDistance = 2.0,
     globalModel = {
@@ -95,7 +95,7 @@ Properties:
 
 Example Configuration:
 
-```lua
+```
 Config.Remote = {
     itemName = "tv_remote",
     model = "prop_cs_remote_01",
@@ -130,7 +130,7 @@ Config.Remote = {
 TV Item Settings (Config.Tvs.items)
 Example Configuration:
 
-```lua
+```
 Config.Tvs.items = {
     "tv" = {
         label = "TV",
@@ -179,7 +179,7 @@ Each URL pattern in the `URL_PATTERNS` table is structured as a Lua table contai
 Here's an example of how you can create your own custom URL pattern for a platform, say `myvideo.com`:
 
 ### Step 1 = Define the URL Pattern
-```lua
+```
 URL_PATTERNS.myvideo = {
     pattern = "myvideo.com/watch?v=",
     template = "https://www.myvideo.com/embed/%s?autoplay=1",
