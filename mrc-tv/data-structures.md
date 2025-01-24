@@ -2,13 +2,14 @@
 title: Data Structures
 parent: MRC TV
 layout: page
-nav_order: 2
+nav_order: 3
 ---
 
 ## Data Structures
 
 ## `entityData`
 Core data structure for managing entities with mrctv.
+Entities are used to represent in-game objects/positions and relay that information from server to client.
 
 | Key                 | Type       | Description                                                        |
 |---------------------|------------|--------------------------------------------------------------------|
@@ -26,6 +27,8 @@ Core data structure for managing entities with mrctv.
 
 ## `RenderTargetData`
 Core data structure for managing render targets with mrctv.
+Render targets are used to display web content on in-game objects.
+They are a child of `entityData` and inherit all properties.
 
 # Properties Table
 
@@ -45,6 +48,6 @@ Core data structure for managing render targets with mrctv.
 | `position`      | `vector3`  | (0,0,0)        | World position if not attached     |
 | `rotation`      | `vector3`  | (0,0,0)        | World rotation if not attached     |
 | `rotationOffset`| `vector3`  | (0,0,0)        | Rotation offset from entity/coords |
-| `entity`        | `number`   | [Optional] nil | Entity handle if attached          |
+| `entity`        | `number`   | nil            | Entity handle if attached          |
 
 ---
