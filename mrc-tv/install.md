@@ -38,7 +38,7 @@ Open the `items.lua` file in your `qb-core/shared` directory and add the followi
 ['tv_remote'] = {
     ['name'] = 'tv_remote',
     ['label'] = 'TV Remote',
-    ['weight'] = 10000,
+    ['weight'] = 1000,
     ['type'] = 'item',
     ['image'] = 'tvremote.png',
     ['unique'] = true,
@@ -59,22 +59,16 @@ Open the `items.lua` file in your `qb-core/shared` directory and add the followi
    combinable = false,
    description = 'A TV',
    consume = 0,
-   client = {
-        image = 'tv.png',
-    },
 },
 
 ['tv_remote'] = {
    label = 'TV Remote',
-   weight = 10000,
+   weight = 1000,
    stack = false,
    close = true,
    combinable = false,
    description = 'A TV remote',
    consume = 0,
-   client = {
-        image = 'tvremote.png',
-    },
 },
 ```
 
