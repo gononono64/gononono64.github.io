@@ -39,3 +39,36 @@ MRC Scripts are protected under a [commercial license](LICENSE) and are intended
 ---
 
 Thank you for choosing MRC Scripts to power your FiveM server. We appreciate your support and look forward to seeing how you use our resources! -->
+
+
+## MRC TVS - FiveM Resource (Free)
+
+The MRC TVS resource allows you to easily place and customize TVs and billboards in your FiveM server. Display videos, images, GIFs, and more, with support for interactive TV remotes and custom URL patterns.
+
+### Features
+
+#### Place TV Screens
+
+Easily place and customize TVs with different models, sizes, and positions. Adjust width, height, and rotation for perfect in-game placement.
+
+#### Billboard Support
+
+Create dynamic billboards that display videos, GIFs, images, and more. Set custom playlists, dimensions, and rotations for full control over content.
+
+#### TV Remote
+
+Interact with TVs using a remote to queue videos, turn off the TV, or pass the remote to other players for shared viewing.
+
+#### Custom URL Patterns
+
+Integrate content from platforms like YouTube, Twitch, and Giphy with custom URL patterns, allowing media from external sites to be displayed on TVs and billboards.
+
+#### Supports Various Media Types
+
+Display videos, GIFs, and images on both TVs and billboards for a dynamic media experience.
+
+### Requirements
+
+- [community_bridge](https://github.com/The-Order-Of-The-Sacred-Framework/community_bridge)
+- [oxlib](https://github.com/overextended/ox_lib)
+- community_bridge Supported Inventory System: Compatible with any inventory system supported by community_bridge
