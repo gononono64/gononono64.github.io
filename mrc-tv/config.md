@@ -17,9 +17,9 @@ This page describes the configuration settings for the various components in the
 - **Type** = String
 - **Description** = URL of the image to display when no signal is received.
 - **Example**:
-    plaintext
+    ```plaintext
     "https://media.tenor.com/IemnuHk4r_4AAAAM/no-signal-stand-by.gif"
-    
+    ```
 ## Billboards (`Config.Billboards`)
 
 ### Properties:
@@ -49,7 +49,7 @@ Config.Billboards = {
         }
     }
 };
-
+```
 ## TV Settings (`Config.Tvs`)
 
 ### General Properties:
@@ -82,7 +82,7 @@ Config.Tvs = {
         }
     }
 };
-
+```
 ## TV Remote Settings (`Config.Remote`)
 
 ### Properties:
@@ -121,7 +121,7 @@ Config.Remote = {
         }
     }
 };
-
+```
 
 ## TV Item Settings (`Config.Tvs.items`)
 
@@ -142,7 +142,7 @@ Config.Tvs.items = {
         model = "prop_tv_flat_01"
     }
 };
-
+```
 
 # Creating Custom URL Patterns
 
@@ -150,7 +150,7 @@ This page explains how you can create your own custom `URL_PATTERN` to support a
 
 ## Structure of a URL Pattern
 
-Each URL pattern in the `URL_PATTERNS` table is structured as a lua table containing the following fields:
+Each URL pattern in the `URL_PATTERNS` table is structured as a Lua table containing the following fields:
 
 ### 1. **`pattern`** (string or function)
 - This is the string or function that defines the unique part of the URL that the platform uses to identify a specific media item (e.g., video, image, etc.).
@@ -187,3 +187,4 @@ URL_PATTERNS.myvideo = {
     durationMultiplier = 1000,  -- Convert to milliseconds
     priority = 3
 }
+```
