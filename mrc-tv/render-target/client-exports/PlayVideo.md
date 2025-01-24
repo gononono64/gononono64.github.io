@@ -4,49 +4,17 @@ grand_parent: Render Targets
 parent: Client Exports
 layout: page
 ---
+## `PlayVideo(id, url)`
+Play a video URL on a DUI.
 
-## `PlayVideo`
+**Parameters:**
+- `id` (`string`): DUI identifier.
+- `url` (`string`): Video URL to play.
 
---- DUI Data Structure
---- @class DUIData
---- @field id string Unique DUI identifier
---- @field renderId number Render target ID
---- @field dui number DUI handle
---- @field handle string DUI browser handle
---- @field txd string Runtime TXD name
---- @field tx string Runtime texture name
---- @field url string? Current media URL
---- @field volume number? Current volume level
+**Returns:**  
+*(None)*  
 
--- Render Target Management
---- Create or get render target for DUI
---- @param id string DUI identifier
---- @param url string Initial URL to load
---- @return string id DUI identifier
---- @return DUIData dui DUI data
-exports("SetRenderTarget", SetRenderTarget)
-
---- Cleanup DUI and render target resources
---- @param id string DUI identifier
-exports("Cleanup", Cleanup)
-
--- Media Controls
---- Play video URL on DUI
---- @param id string DUI identifier  
---- @param url string Video URL to play
-exports("PlayVideo
-
-### Parameters
-- `id` (`string`): Description.
-- `url` (`string`): Description.
-- `id` (`string`): Description.
-- `id` (`string`): Description.
-- `url` (`string`): Description.
-- `id` (`string`): Description.
-- `paused` (`boolean`): Description.
-- `id` (`string`): Description.
-- `volume` (`number`): Description.
-
-### Returns
-- `string id DUI identifier`
-- `DUIData dui DUI data`
+**Example:**
+```lua
+exports['rebound_entities']:PlayVideo("example_DUI_id", "https://example.com/video.mp4")
+```

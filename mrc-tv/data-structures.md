@@ -1,6 +1,6 @@
 ---
-title: Entity Data
-parent: Rebound Entities
+title: Data Structures
+parent: MRC TV
 layout: page
 nav_order: 1
 ---
