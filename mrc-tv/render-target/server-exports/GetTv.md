@@ -16,7 +16,7 @@ Get TV data by ID.
 
 **Example:**
 ```lua
-local tvData = exports['rebound_entities']:GetTv("exampleTV")
+local tvData = exports['mrctv']:GetTv("exampleTV")
 if tvData then
     print("Found TV data:", tvData)
 else

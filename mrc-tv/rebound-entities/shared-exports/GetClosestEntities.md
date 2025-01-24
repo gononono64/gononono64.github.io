@@ -17,5 +17,5 @@ Finds entities within a radius of a given position.
 
 **Example:**
 ```lua
-local nearby = exports['rebound_entities']:GetClosestEntities(pos, 50.0)
+local nearby = exports['mrctv']:GetClosestEntities(pos, 50.0)
 ```

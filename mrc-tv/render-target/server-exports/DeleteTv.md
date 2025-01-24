@@ -16,7 +16,7 @@ Delete the TV and clean up resources.
 
 **Example:**
 ```lua
-local success = exports['rebound_entities']:DeleteTv("exampleTV")
+local success = exports['mrctv']:DeleteTv("exampleTV")
 if success then
     print("TV deleted successfully")
 else

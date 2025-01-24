@@ -16,6 +16,6 @@ Clear the entire TV queue.
 
 **Example:**
 ```lua
-exports['rebound_entities']:ClearQueue("exampleTV")
+exports['mrctv']:ClearQueue("exampleTV")
 print("TV queue cleared")
 ```

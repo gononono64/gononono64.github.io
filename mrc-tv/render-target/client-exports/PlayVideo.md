@@ -16,5 +16,5 @@ Play a video URL on a DUI.
 
 **Example:**
 ```lua
-exports['rebound_entities']:PlayVideo("example_DUI_id", "https://example.com/video.mp4")
+exports['mrctv']:PlayVideo("example_DUI_id", "https://example.com/video.mp4")
 ```

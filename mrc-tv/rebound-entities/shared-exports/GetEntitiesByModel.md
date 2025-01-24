@@ -16,5 +16,5 @@ Retrieves entities by their model.
 
 **Example:**
 ```lua
-local tvs = exports['rebound_entities']:GetEntitiesByModel("prop_tv_flat_01")
+local tvs = exports['mrctv']:GetEntitiesByModel("prop_tv_flat_01")
 ```

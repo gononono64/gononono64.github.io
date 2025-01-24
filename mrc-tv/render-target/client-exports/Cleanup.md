@@ -15,7 +15,7 @@ Clean up DUI and render target resources.
 
 **Example:**
 ```lua
-exports['rebound_entities']:Cleanup("example_DUI_id")
+exports['mrctv']:Cleanup("example_DUI_id")
 print("DUI cleaned up")
 ```
 

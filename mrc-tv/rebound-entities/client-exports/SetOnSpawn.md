@@ -19,7 +19,7 @@ Sets a spawn handler for an entity.
 
 **Example:**
 ```lua
-exports['rebound_entities']:SetOnSpawn(id, function(data, ent) 
+exports['mrctv']:SetOnSpawn(id, function(data, ent) 
     SetEntityCollision(ent, false)
 end)
 ```

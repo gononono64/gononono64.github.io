@@ -18,7 +18,7 @@ Sets a handler for entity data changes.
 
 **Example:**
 ```lua
-exports['rebound_entities']:SetOnSyncKeyChange(entity, function(e, k, v) 
+exports['mrctv']:SetOnSyncKeyChange(entity, function(e, k, v) 
     print(k, v)
 end)
 ```

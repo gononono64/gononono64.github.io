@@ -17,6 +17,6 @@ Power on the TV and give the remote to the player.
 
 **Example:**
 ```lua
-exports['rebound_entities']:TurnOnTv(playerServerId, "exampleTV")
+exports['mrctv']:TurnOnTv(playerServerId, "exampleTV")
 print("TV powered on and remote given to player:", src)
 ```

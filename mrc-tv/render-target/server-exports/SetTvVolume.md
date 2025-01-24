@@ -17,6 +17,6 @@ Set the TV volume level.
 
 **Example:**
 ```lua
-exports['rebound_entities']:SetTvVolume("exampleTV", 0.7)
+exports['mrctv']:SetTvVolume("exampleTV", 0.7)
 print("Volume set to 70% for TV:", id)
 ```

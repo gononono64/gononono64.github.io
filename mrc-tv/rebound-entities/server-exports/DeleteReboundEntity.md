@@ -17,5 +17,5 @@ Removes a synced entity.
 
 **Example:**
 ```lua
-exports['rebound_entities']:DeleteReboundEntity("entity_1")
+exports['mrctv']:DeleteReboundEntity("entity_1")
 ```

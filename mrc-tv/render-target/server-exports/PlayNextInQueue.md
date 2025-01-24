@@ -16,6 +16,6 @@ Play the next video in the TV queue.
 
 **Example:**
 ```lua
-exports['rebound_entities']:PlayNextInQueue("exampleTV")
+exports['mrctv']:PlayNextInQueue("exampleTV")
 print("Playing next video in TV queue")
 ```

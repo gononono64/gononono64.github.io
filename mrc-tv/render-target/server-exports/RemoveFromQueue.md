@@ -17,7 +17,7 @@ Remove a queue item at the specified index.
 
 **Example:**
 ```lua
-local removedItem = exports['rebound_entities']:RemoveFromQueue("exampleTV", 2)
+local removedItem = exports['mrctv']:RemoveFromQueue("exampleTV", 2)
 if removedItem then
     print("Removed item:", removedItem)
 else

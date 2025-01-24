@@ -17,6 +17,6 @@ Set the DUI volume level.
 
 **Example:**
 ```lua
-exports['rebound_entities']:SetDuiVolume("example_DUI_id", 0.5)
+exports['mrctv']:SetDuiVolume("example_DUI_id", 0.5)
 print("Volume set to 50% for DUI:", id)
 ```

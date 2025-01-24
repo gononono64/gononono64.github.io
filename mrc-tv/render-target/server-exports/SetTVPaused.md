@@ -17,6 +17,6 @@ Toggle the TV pause state.
 
 **Example:**
 ```lua
-exports['rebound_entities']:SetTVPaused("exampleTV", true)
+exports['mrctv']:SetTVPaused("exampleTV", true)
 print("TV paused")
 ```

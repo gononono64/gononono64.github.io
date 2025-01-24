@@ -14,5 +14,5 @@ Returns all registered entities.
 
 **Example:**
 ```lua
-local entities = exports['rebound_entities']:GetEntities()
+local entities = exports['mrctv']:GetEntities()
 ```

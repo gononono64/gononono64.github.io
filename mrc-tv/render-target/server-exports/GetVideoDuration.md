@@ -17,7 +17,7 @@ Get the video duration from the platform and video ID.
 
 **Example:**
 ```lua
-local duration = exports['rebound_entities']:GetVideoDuration("youtube", "dQw4w9WgXcQ")
+local duration = exports['mrctv']:GetVideoDuration("youtube", "dQw4w9WgXcQ")
 if duration then
     print("Video duration is:", duration, "ms")
 else

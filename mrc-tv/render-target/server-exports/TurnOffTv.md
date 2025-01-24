@@ -16,6 +16,6 @@ Power off the TV and clean up the remote.
 
 **Example:**
 ```lua
-exports['rebound_entities']:TurnOffTv("exampleTV")
+exports['mrctv']:TurnOffTv("exampleTV")
 print("TV powered off and remote cleaned up")
 ```

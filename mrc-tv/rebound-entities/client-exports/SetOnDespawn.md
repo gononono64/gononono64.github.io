@@ -19,7 +19,7 @@ Sets a despawn handler for an entity.
 
 **Example:**
 ```lua
-exports['rebound_entities']:SetOnDespawn(id, function(data, ent) 
+exports['mrctv']:SetOnDespawn(id, function(data, ent) 
     print("Despawned", ent)
 end)
 

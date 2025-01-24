@@ -17,6 +17,6 @@ Set the DUI pause state. Must be a video url.
 
 **Example:**
 ```lua
-exports['rebound_entities']:SetPaused("example_DUI_id", true)
+exports['mrctv']:SetPaused("example_DUI_id", true)
 print("DUI paused")
 ```

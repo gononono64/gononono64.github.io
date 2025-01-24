@@ -20,6 +20,6 @@ Add a video to the TV queue.
 
 **Example:**
 ```lua
-exports['rebound_entities']:AddToTvQueue("exampleTV", "youtube", "dQw4w9WgXcQ", nil, 300000)
+exports['mrctv']:AddToTvQueue("exampleTV", "youtube", "dQw4w9WgXcQ", nil, 300000)
 print("Video added to TV queue")
 ```

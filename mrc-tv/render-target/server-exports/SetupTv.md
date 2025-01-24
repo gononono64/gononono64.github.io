@@ -24,6 +24,6 @@ local entityData = {
     position = vector3(0, 0, 0),
     rotation = vector3(0, 0, 0)
 }
-local tvData = exports['rebound_entities']:SetupTv(entityData)
+local tvData = exports['mrctv']:SetupTv(entityData)
 print("TV registered with data:", tvData)
 ```

@@ -17,5 +17,5 @@ Fetches data for a specific entity.
 
 **Example:**
 ```lua
-local data = exports['rebound_entities']:GetEntityData("entity_1")
+local data = exports['mrctv']:GetEntityData("entity_1")
 ```

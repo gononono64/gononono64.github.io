@@ -16,6 +16,6 @@ Finds the nearest entity to a given position.
 
 **Example:**
 ```lua
-local nearest = exports['rebound_entities']:GetClosestEntity(GetEntityCoords(PlayerPedId()))
+local nearest = exports['mrctv']:GetClosestEntity(GetEntityCoords(PlayerPedId()))
 ```
 

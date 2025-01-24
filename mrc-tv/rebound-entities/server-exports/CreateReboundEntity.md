@@ -17,7 +17,7 @@ Creates a new synced entity.
 
 **Example:**
 ```lua
-local entity = exports['rebound_entities']:CreateReboundEntity({
+local entity = exports['mrctv']:CreateReboundEntity({
     model = "prop_tv_flat_01",
     position = vector3(x, y, z),
     rotation = vector3(0, 0, 0)

@@ -18,6 +18,6 @@ Create or get a render target for a DUI.
 
 **Example:**
 ```lua
-local id, duiData = exports['rebound_entities']:SetRenderTarget("example_DUI_id", "https://example.com")
+local id, duiData = exports['mrctv']:SetRenderTarget("example_DUI_id", "https://example.com")
 print("DUI created with ID:", id)
 ```

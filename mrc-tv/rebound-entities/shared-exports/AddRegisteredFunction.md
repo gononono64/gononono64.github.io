@@ -16,7 +16,7 @@ Adds a function to be executed when any entity is registered.
 
 **Example:**
 ```lua
-local id = exports['rebound_entities']:AddRegisteredFunction(function(data) 
+local id = exports['mrctv']:AddRegisteredFunction(function(data) 
     print(data.id)
 end)
 ```
