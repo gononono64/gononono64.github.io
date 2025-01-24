@@ -2,7 +2,7 @@
 title: Data Structures
 parent: MRC TV
 layout: page
-nav_order: 1
+nav_order: 2
 ---
 
 ## Data Structures

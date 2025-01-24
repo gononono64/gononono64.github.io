@@ -2,7 +2,7 @@
 title: Install Instructions
 parent: MRC TV
 layout: page
-nav_order: 3
+nav_order: 1
 ---
 # Installation Instructions for `MRC TV`
 
