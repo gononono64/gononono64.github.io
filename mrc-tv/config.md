@@ -1,10 +1,9 @@
 ---
-title = Config
-parent = MRC TV
-layout = page
-nav_order = 2
+title: Config
+parent: MRC TV
+layout: page
+nav_order: 2
 ---
-
 
 
 # Configuration Settings
