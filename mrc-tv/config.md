@@ -17,9 +17,9 @@ This page describes the configuration settings for the various components in the
 - **Type** = String
 - **Description** = URL of the image to display when no signal is received.
 - **Example**:
-    ```plaintext
+    plaintext
     "https://media.tenor.com/IemnuHk4r_4AAAAM/no-signal-stand-by.gif"
-    ```
+    
 ## Billboards (`Config.Billboards`)
 
 ### Properties:
@@ -30,7 +30,7 @@ This page describes the configuration settings for the various components in the
     playlist = A list of URLs to media that should be played on the billboard.
 ### Example Configuration:
 Example Configuration:
-```
+```lua
 Config.Billboards = {
     {
         position = vector3(-1299.16, -411.53, 35.7),
@@ -49,7 +49,7 @@ Config.Billboards = {
         }
     }
 };
-```
+
 ## TV Settings (`Config.Tvs`)
 
 ### General Properties:
@@ -58,7 +58,7 @@ General Properties:
 
 ### Example Configuration for TV Models:
 Example Configuration for TV Models:
-```
+```lua
 Config.Tvs = {
     pickupDistance = 2.0,
     globalModel = {
@@ -82,7 +82,7 @@ Config.Tvs = {
         }
     }
 };
-```
+
 ## TV Remote Settings (`Config.Remote`)
 
 ### Properties:
@@ -95,7 +95,7 @@ Properties:
 
 Example Configuration:
 
-```
+```lua
 Config.Remote = {
     itemName = "tv_remote",
     model = "prop_cs_remote_01",
@@ -121,7 +121,7 @@ Config.Remote = {
         }
     }
 };
-```
+
 
 ## TV Item Settings (`Config.Tvs.items`)
 
@@ -130,7 +130,7 @@ Config.Remote = {
 TV Item Settings (Config.Tvs.items)
 Example Configuration:
 
-```
+```lua
 Config.Tvs.items = {
     "tv" = {
         label = "TV",
@@ -142,7 +142,7 @@ Config.Tvs.items = {
         model = "prop_tv_flat_01"
     }
 };
-```
+
 
 # Creating Custom URL Patterns
 
@@ -150,7 +150,7 @@ This page explains how you can create your own custom `URL_PATTERN` to support a
 
 ## Structure of a URL Pattern
 
-Each URL pattern in the `URL_PATTERNS` table is structured as a Lua table containing the following fields:
+Each URL pattern in the `URL_PATTERNS` table is structured as a lua table containing the following fields:
 
 ### 1. **`pattern`** (string or function)
 - This is the string or function that defines the unique part of the URL that the platform uses to identify a specific media item (e.g., video, image, etc.).
@@ -179,7 +179,7 @@ Each URL pattern in the `URL_PATTERNS` table is structured as a Lua table contai
 Here's an example of how you can create your own custom URL pattern for a platform, say `myvideo.com`:
 
 ### Step 1 = Define the URL Pattern
-```
+```lua
 URL_PATTERNS.myvideo = {
     pattern = "myvideo.com/watch?v=",
     template = "https://www.myvideo.com/embed/%s?autoplay=1",
@@ -187,4 +187,3 @@ URL_PATTERNS.myvideo = {
     durationMultiplier = 1000,  -- Convert to milliseconds
     priority = 3
 }
-```
