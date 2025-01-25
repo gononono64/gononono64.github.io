@@ -22,31 +22,8 @@ nav_order: 1
 Open the `items.lua` file in your `qb-core/shared` directory and add the following items:
 
 ```lua
-['tv'] = {
-    ['name'] = 'tv',
-    ['label'] = 'TV',
-    ['weight'] = 10000,
-    ['type'] = 'item',
-    ['image'] = 'tv.png',
-    ['unique'] = true,
-    ['useable'] = true,
-    ['shouldClose'] = true,
-    ['combinable'] = false,
-    ['description'] = 'A TV',
-},
-
-['tv_remote'] = {
-    ['name'] = 'tv_remote',
-    ['label'] = 'TV Remote',
-    ['weight'] = 1000,
-    ['type'] = 'item',
-    ['image'] = 'tvremote.png',
-    ['unique'] = true,
-    ['useable'] = true,
-    ['shouldClose'] = true,
-    ['combinable'] = false,
-    ['description'] = 'A TV remote',
-},
+    tv                           = { name = 'tv', label = 'TV', weight = 10000, type = 'item', image = 'tv.png', unique = true, useable = true, shouldClose = true, combinable = false, description = 'A TV' },
+    tv_remote                    = { name = 'tv_remote', label = 'TV Remote', weight = 1000, type = 'item', image = 'tv_remote.png', unique = true, useable = true, shouldClose = true, combinable = false, description = 'A TV remote' },
 ```
 
 ### For ESX and frameworks using ox inventory
