@@ -28,25 +28,23 @@ Open the `items.lua` file in your `qb-core/shared` directory and add the followi
 
 ### For ESX and frameworks using ox inventory
 ```lua
-['tv'] = {
-   label = 'TV',
-   weight = 10000,
-   stack = false
-   close = true,
-   combinable = false,
-   description = 'A TV',
-   consume = 0,
-},
+   ['tv'] = {
+        label = 'TV',
+        weight = 10000,
+        stack = false,
+        close = true,
+        combinable = false,
+        description = 'A TV',
+     },
 
-['tv_remote'] = {
-   label = 'TV Remote',
-   weight = 1000,
-   stack = false,
-   close = true,
-   combinable = false,
-   description = 'A TV remote',
-   consume = 0,
-},
+     ['tv_remote'] = {
+        label = 'TV Remote',
+        weight = 1000,
+        stack = false,
+        close = true,
+        combinable = false,
+        description = 'A TV remote',
+     },
 ```
 
 
