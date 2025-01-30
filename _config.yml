@@ -4,3 +4,4 @@ theme: just-the-docs
 color_scheme: dark
 url: ""
 repository: gononono64/mrcscripts.github.io
+baseurl: mrcscripts.github.io
