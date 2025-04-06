@@ -28,9 +28,9 @@ add_ace group.vip companion.use allow
 
 To manually add individual players to the VIP group:
 
-```text
-# Add to your server.cfg
-add_principal identifier.fivem:PLAYER_FIVEM_ID group.vip
+```cfg
+    # Add to your server.cfg
+    add_principal identifier.fivem:PLAYER_FIVEM_ID group.vip
 ```
 
 **Replace `PLAYER_FIVEM_ID` with the player's identifier.**
@@ -48,17 +48,20 @@ If you sell VIP access through your Tebex store:
 
 1. **Navigate to**: Your Tebex Dashboard → Packages → [Select Package] → Commands
 2. **Add Command**:
-
-```text
+{% raw %}
+```cfg
     add_principal identifier.fivem:{{player.id}} group.vip
 ```
+{% endraw %}
 
 3. **For Subscription/Timed Packages**:
    Add to the **Expiry Commands** section:
 
-```text
+{% raw %}
+```cfg
     remove_principal identifier.fivem:{{player.id}} group.vip
 ```
+{% endraw %}
 
 ## Video Tutorial
 
