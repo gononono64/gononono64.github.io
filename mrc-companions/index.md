@@ -49,11 +49,17 @@ Two types of loot crates are available:
 Restrict companions to VIP players only to create an exclusive experience or monetize your server.
 
 - **Tebex Integration**: Sell VIP access through your Tebex store
-- **Subscription Support**: Automatic permission management for timed packages
 - **Permission System**: Uses FiveM's native ACE permissions
-- **Easy Setup**: Simple configuration in your server config
+- **Subscription Support**: VIP access can be time-limited
+- **Manual Setup**: Add players to the VIP group manually using server.cfg
 
-Learn more about VIP setup →
+## Business Benefits
+
+- **Monetization**: Sell VIP access to companions through Tebex
+- **Player Retention**: Collectible companions keep players engaged
+- **Server Uniqueness**: Stand out with custom companions
+- **Flexible Integration**: Compatible with most frameworks and inventory systems
+- **Easy Setup**: Simple installation and configuration process
 
 ## Requirements
 
@@ -63,17 +69,3 @@ Learn more about VIP setup →
 - Any inventory system supported by community_bridge
 - Any target system supported by community_bridge
 
-## Getting Started
-
-1. Install all required dependencies
-2. Upload the resource to your server
-3. Add the resource to your server.cfg
-4. Configure VIP access (optional)
-5. Restart your server
-
-## Business Benefits
-
-- **Monetization**: Sell VIP access to companions through Tebex
-- **Player Retention**: Collectible companions keep players engaged
-- **Server Uniqueness**: Stand out with custom companions
-- **Flexible Integration**: Compatible with most frameworks
