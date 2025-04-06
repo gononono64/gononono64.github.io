@@ -5,7 +5,7 @@ layout: page
 nav_order: 2
 ---
 
-# 🌟 Enabling VIP Access for Companions
+# Enabling VIP Access for Companions
 
 ## Overview
 
@@ -49,14 +49,14 @@ If you sell VIP access through your Tebex store:
 1. **Navigate to**: Your Tebex Dashboard → Packages → [Select Package] → Commands
 2. **Add Command**:
 
-```plaintext
+```cfg
 add_principal identifier.fivem:{{player.id}} group.vip
 ```
 
 3. **For Subscription/Timed Packages**:
    Add to the **Expiry Commands** section:
 
-```plaintext
+```cfg
 remove_principal identifier.fivem:{{player.id}} group.vip
 ```
 
