@@ -1,59 +1,69 @@
 ---
-title: Enable VIP
+title: VIP Access System
 parent: MRC COMPANIONS
 layout: page
 nav_order: 2
 ---
 
-## Enabling VIP Access for Companions
+# 🌟 Enabling VIP Access for Companions
 
-If you've enabled `Config.UseVIP = true` in the config, **only VIP players will be able to use the companion system**. To grant players access, you’ll need to use FiveM’s built-in ACE permission system.
+## Overview
 
-First add this to your server.cfg (or a config file that runs on server startup):
+The companion system can be restricted to VIP players only. This feature allows you to create an exclusive experience or monetize your server through Tebex by selling VIP access.
+
+> **Configuration Required**: Set `Config.UseVIP = true` in the config file to enforce VIP permissions.
+
+## Setting Up VIP Permissions
+
+FiveM uses the ACE permission system to manage access rights. Add this permission to your server:
 
 ```cfg
+# Add this to your server.cfg
 add_ace group.vip companion.use allow
 ```
 
-### Option 1: Manually Add Players (server.cfg)
+## Granting VIP Access
 
-To manually give a player VIP access, add the following lines to your `server.cfg` (or a config file that's executed on server startup):
+### Option 1: Manual Setup ⚙️
+
+To manually add individual players to the VIP group:
 
 ```cfg
-add_principal identifier.fivem:YOUR_FIVEM_ID_HERE group.vip
+# Add to your server.cfg
+add_principal identifier.fivem:PLAYER_FIVEM_ID group.vip
 ```
 
-> Replace `YOUR_FIVEM_ID_HERE` with the player's actual FiveM ID (you can use `steam:` or `license:` if preferred).
+**Replace `PLAYER_FIVEM_ID` with the player's identifier.**
+
+You can use any of these identifier formats:
+- `fivem:1234567890` (FiveM ID)
+- `steam:1100001XXXXXXX` (Steam Hex ID)
+- `license:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx` (License)
 
 ---
 
-### Option 2: Automatically Add Players Through Tebex
+### Option 2: Tebex Integration 🛒
 
-If you're selling VIP access through Tebex, you can automatically add players to the VIP group using Tebex's command system:
+If you sell VIP access through your Tebex store:
 
-1. **Go to your Tebex package > Commands tab**
-2. Add the following command:
+1. **Navigate to**: Your Tebex Dashboard → Packages → [Select Package] → Commands
+2. **Add Command**:
 
 ```plaintext
 add_principal identifier.fivem:{{player.id}} group.vip
 ```
 
-If it's a timed perk or subscription, add this to the **Expiry Commands** to remove access when it ends:
+3. **For Subscription/Timed Packages**:
+   Add to the **Expiry Commands** section:
 
 ```plaintext
 remove_principal identifier.fivem:{{player.id}} group.vip
 ```
 
-> ✅ Make sure to set `Config.UseVIP = true` in the config file to enforce VIP access!
+## Video Tutorial
+
+For a visual guide on setting up ACE permissions:
+
+[![FiveM Permissions Tutorial](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=WsvBbt62-qs)
 
 ---
-
-### Need Help? Watch This Video:
-
-If you're new to ACE permissions or want a visual walkthrough, check out this great explainer:  
-📺 [FiveM Permissions Tutorial](https://www.youtube.com/watch?v=WsvBbt62-qs)
-
----
-Let me know if you'd like a separate section for testing VIP access in-game or troubleshooting tips!
-## Additional Resources
-For support or more information, please contact the Mr Crowley.
