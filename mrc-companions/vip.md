@@ -50,14 +50,14 @@ If you sell VIP access through your Tebex store:
 2. **Add Command**:
 
 ```cfg
-add_principal identifier.fivem:{{player.id}} group.vip
+    add_principal identifier.fivem:\{\{player.id\}\} group.vip
 ```
 
 3. **For Subscription/Timed Packages**:
    Add to the **Expiry Commands** section:
 
 ```cfg
-remove_principal identifier.fivem:{{player.id}} group.vip
+    remove_principal identifier.fivem:\{\{player.id\}\} group.vip
 ```
 
 ## Video Tutorial
