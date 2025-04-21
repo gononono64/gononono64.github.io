@@ -1,122 +1,162 @@
 ---
-title: Recipe/Factory Tags (Advanced)
+title: Factory Tags
 parent: MRC COOKING
 layout: page
-nav_order: 3 # Adjust nav_order as needed
+nav_order: 3
 ---
 
-# Using Advanced Tags in `config.lua` (Recipes/Factories)
+# Easy Guide: What Does the `tags` Section Do?
 
-## Overview
+## What is the `tags` Section?
 
-Within `mrc-cooking`, particularly in the `Config.Recipes` section (and potentially in customized `Config.Factories`), a `tags` field can be used for much more than simple categorization. This advanced `tags` structure allows you to define detailed visual and interactive elements like camera angles, player animations, spawned props, and particle effects associated with specific recipes or crafting stations.
+In `mrc-cooking`, the `tags` section is only used on **factories** (your cooking stations) in `config.lua`. It lets you control how things look and act when someone uses a cooking station. You can use it to set up camera angles, play animations, show props (objects), and add cool effects like steam or fire.
 
-**Note:** This differs significantly from using tags purely as simple string labels for basic categorization.
+You put the `tags` table inside a factory in your `config.lua`.
 
-## Structure of the Advanced `tags` Table
+---
 
-When used for detailed configuration, the `tags` field is a Lua table containing specific keys, each holding further configuration tables:
+## What Can You Do With Tags?
 
-```lua
--- Example structure within a Recipe or Factory definition
-tags = {
-    ['camera'] = { ... camera settings ... },
-    ['player_animation'] = { ... animation settings ... },
-    ['props'] = { ... prop settings ... },
-    ['particles'] = { ... particle settings ... },
-}
-```
+Here are the main things you can set up:
 
-## Breakdown of Tag Sections
+### 1. Camera
 
-### 1. `camera`
-
-Controls the player's camera during interaction.
+Change where the player's camera looks when using or crafting at a station.
 
 ```lua
 ['camera'] = {
-    onUse = { -- Camera when initially interacting/using the station/item
-        offset = vector3(X, Y, Z), -- Positional offset from a base point
-        rotationOffset = vector3(Pitch, Roll, Yaw), -- Rotational offset
+    onUse = {
+        offset = vector3(X, Y, Z),         -- Move the camera to this spot
+        rotationOffset = vector3(X, Y, Z), -- Rotate the camera
     },
-    onCraft = { -- Camera during the crafting process (if applicable)
+    onCraft = {
         offset = vector3(X, Y, Z),
-        rotationOffset = vector3(Pitch, Roll, Yaw),
+        rotationOffset = vector3(X, Y, Z),
     },
-    -- You might see other states depending on the script's features
 }
 ```
 
-### 2. `player_animation`
+---
 
-Defines animations played by the player character.
+### 2. Player Animation
+
+Make the player's character do an animation (like stirring, grilling, etc).
 
 ```lua
 ['player_animation'] = {
-    onUse = { -- Animation when initially interacting
-        dict = 'animation_dictionary_name', -- e.g., 'amb@prop_human_bbq@male@idle_a'
-        animation = 'animation_name', -- e.g., 'idle_b'
-        flag = animation_flag, -- Controls animation behavior (e.g., 1 for looping base, 49 for looping upper body)
+    onUse = {
+        dict = 'animation_dictionary', -- Animation group name
+        animation = 'animation_name',  -- Animation name
+        flag = 1,                      -- Usually 1 (how the animation plays)
     },
-    onCraft = { -- Animation during the crafting process
-        dict = 'animation_dictionary_name',
+    onCraft = {
+        dict = 'animation_dictionary',
         animation = 'animation_name',
-        flag = animation_flag,
+        flag = 1,
     },
-    -- Other states like onComplete, onCancel might exist
 }
 ```
 
-### 3. `props`
+---
 
-Specifies props (objects) to be spawned in the world or attached to the player.
+### 3. Props
+
+Show objects (like pots, pans, or tools) either on the table or in the player's hand.
 
 ```lua
 ['props'] = {
-    onUse = { -- Props spawned when interaction starts
-        { -- List of props for this state
-            model = 'prop_model_name', -- e.g., 'prop_kitch_pot_lrg'
-            offset = vector3(X, Y, Z), -- Offset relative to station/player
-            rotationOffset = vector3(Pitch, Roll, Yaw),
-        },
-        -- ... more props for onUse ...
-    },
-    onCraft = { -- Props spawned during crafting
+    onUse = {
         {
-            model = 'prop_model_name', -- e.g., 'prop_fish_slice_01'
-            bone = 'IK_R_Hand', -- Optional: Attach to player bone (e.g., 'IK_L_Hand', 'IK_R_Hand')
-            offset = vector3(X, Y, Z), -- Offset relative to bone if specified, otherwise world/station
-            rotationOffset = vector3(Pitch, Roll, Yaw),
+            model = 'prop_model_name',      -- What object to show
+            offset = vector3(X, Y, Z),     -- Where to put it
+            rotationOffset = vector3(X, Y, Z),
         },
-        -- ... more props for onCraft ...
+    },
+    onCraft = {
+        {
+            model = 'prop_model_name',
+            bone = 'IK_R_Hand',            -- Attach to player's hand (optional)
+            offset = vector3(X, Y, Z),
+            rotationOffset = vector3(X, Y, Z),
+        },
     }
 }
 ```
-*   Props without a `bone` are typically placed relative to the factory/station coordinates.
-*   Props *with* a `bone` are attached to the player and move with them. They are usually removed automatically when the interaction ends.
+- If you use `bone`, the prop sticks to the player. If not, it sits on the table.
 
-### 4. `particles`
+---
 
-Defines particle effects to be played.
+### 4. Particles
+
+Add effects like steam, fire, or smoke.
 
 ```lua
 ['particles'] = {
-    onCraft = { -- Particles played during crafting
-        { -- List of particles for this state
-            dict = "particle_dictionary", -- e.g., "core", "cut_solomon1"
-            name = "particle_effect_name", -- e.g., "ent_amb_torch_fire", "cs_sol2_coffee_steam"
-            scale = 1.0, -- Size of the effect
-            color = vector3(R, G, B), -- Optional: Tint color (0-255)
-            offset = vector3(X, Y, Z), -- Position relative to station/player
-            rotationOffset = vector3(Pitch, Roll, Yaw),
-            looped = true, -- or false: Whether the effect repeats
+    onCraft = {
+        {
+            dict = "particle_dictionary",  -- Effect group name
+            name = "effect_name",          -- Effect name
+            scale = 1.0,                   -- Size of the effect
+            color = vector3(R, G, B),      -- Color (optional)
+            offset = vector3(X, Y, Z),     -- Where to show it
+            rotationOffset = vector3(X, Y, Z),
+            looped = true,                 -- Should it repeat?
         },
-        -- ... more particles for onCraft ...
     },
-    -- onUse, onComplete etc. might also be used here
 }
 ```
 
-## Usage
+---
 
-By carefully configuring these sub-tables within the `tags` field of a recipe or factory, you can create immersive and visually distinct crafting experiences. You need to find the correct model names, animation dictionaries/names, particle dictionaries/names, and experiment with offset/rotation values to achieve the desired effect.
+## How Do I Use It?
+
+- Copy the parts you want (camera, animation, props, particles) into the `tags` section of your factory.
+- Change the values to fit your setup (try different numbers to see what looks good).
+- You don’t have to use every section—just the ones you want.
+
+---
+
+## Example
+
+```lua
+tags = {
+    camera = {
+        onUse = {
+            offset = vector3(-1, -1, 2),
+            rotationOffset = vector3(-45, 0, -45),
+        },
+    },
+    player_animation = {
+        onCraft = {
+            dict = 'amb@prop_human_bbq@male@idle_a',
+            animation = 'idle_b',
+            flag = 1,
+        },
+    },
+    props = {
+        onCraft = {
+            {
+                model = 'prop_kitch_pot_lrg',
+                offset = vector3(0, 0.75, 0),
+                rotationOffset = vector3(0, 0, -30),
+            },
+        },
+    },
+    particles = {
+        onCraft = {
+            {
+                dict = "core",
+                name = "ent_amb_torch_fire",
+                scale = 0.5,
+                offset = vector3(0, 0.75, -0.15),
+                rotationOffset = vector3(0, 0, 0),
+                looped = true,
+            },
+        },
+    },
+}
+```
+
+---
+
+**Tip:** Play around with the numbers and see what happens in-game. You can make your cooking stations look and feel unique!

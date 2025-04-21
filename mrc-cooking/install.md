@@ -5,25 +5,25 @@ layout: page
 nav_order: 1
 ---
 
-# MRC Cooking Installation Guide
+# MRC Cooking Install Guide
 
-## Overview
-This guide provides instructions for installing the `mrc-cooking` resource on your FiveM server.
+## What is this?
+This guide shows you how to add the `mrc-cooking` resource to your FiveM server.
 
-## Prerequisites
+## What you need first
 - A FiveM server
-- [community_bridge](https://github.com/The-Order-Of-The-Sacred-Framework/community_bridge) installed and ensured **before** `mrc-cooking`.
-- A compatible framework (e.g., QBCore, ESX).
-- A compatible inventory system (e.g., qb-inventory, ox_inventory).
-- A compatible target system (e.g., qb-target, ox_target).
-- oxmysql installed and configured.
+- [community_bridge](https://github.com/The-Order-Of-The-Sacred-Framework/community_bridge) (make sure this starts **before** `mrc-cooking`)
+- A framework like QBCore or ESX
+- An inventory system (like qb-inventory or ox_inventory)
+- A target system (like qb-target or ox_target)
+- oxmysql set up and working
 
-## Installation Steps
+## How to install
 
-### Step 1: Install the Resource
-1.  Download the `mrc-cooking` resource.
-2.  Place the `mrc-cooking` folder into your server's `resources` directory.
-3.  Add `ensure mrc-cooking` to your `server.cfg` file, ensuring it is placed **after** `ensure community_bridge`.
+### 1. Add the resource
+1. Download `mrc-cooking`.
+2. Put the `mrc-cooking` folder in your server's `resources` folder.
+3. Open your `server.cfg` and add `ensure mrc-cooking` **after** `ensure community_bridge`.
 
     ```cfg
     # Example server.cfg
@@ -31,26 +31,26 @@ This guide provides instructions for installing the `mrc-cooking` resource on yo
     ensure mrc-cooking
     ```
 
-### Step 2: Set Up Image Files
-1.  Inside the `mrc-cooking` resource folder, locate the `images` directory. This folder contains all the `.png` default image files for the items in the cooking system.
-2.  Copy all the `.png` image files from that directory into your inventory system's image folder. Common locations include:
-    *   **QBCore (qb-inventory):** `resources/qb-inventory/html/images/`
-    *   **OX Inventory:** `resources/ox_inventory/web/images/`
-    *   **PS-Inventory:** Check its documentation for the correct image path.
-    *   *Other Inventories:* Consult your specific inventory resource's documentation.
+### 2. Add the images
+1. Go into the `mrc-cooking` folder and find the `images` folder. This has all the `.png` images for the cooking items.
+2. Copy all the `.png` files from there into your inventory's image folder. Here are some common places:
+    * **QBCore (qb-inventory):** `resources/qb-inventory/html/images/`
+    * **OX Inventory:** `resources/ox_inventory/web/images/`
+    * **PS-Inventory:** Check its docs for the right folder.
+    * *Other inventories:* Look at your inventory's docs.
 
-### Step 3: Add Item Definitions
-1.  This file contains item definitions formatted for different inventory systems.
-2.  **Identify your inventory system:**
-    *   **For QBCore:** Copy the entire Lua table under the section labeled `QB-INVENTORY`.
-    *   **For OX Inventory:** Copy the entire Lua table under the section labeled `OX INVENTORY`.
-3.  **Paste the copied items into your inventory's item definition file:**
-    *   **QBCore:** `qb-core/shared/items.lua` (Paste inside the main `QBCore.Shared.Items = { ... }` table).
-    *   **OX Inventory:** `ox_inventory/data/items.lua` (Paste inside the main `Items = { ... }` table).
-    *   **ESX (using ox_inventory):** Follow the OX Inventory instructions above.
-    *   *Other Inventories:* Consult your specific inventory resource's documentation for adding items.
+### 3. Add the items
+1. This file has item definitions for different inventory systems.
+2. **Figure out which inventory you use:**
+    * **QBCore:** Copy everything under `QB-INVENTORY`.
+    * **OX Inventory:** Copy everything under `OX INVENTORY`.
+3. **Paste the items into your inventory's items file:**
+    * **QBCore:** `qb-core/shared/items.lua` (paste inside the `QBCore.Shared.Items = { ... }` table)
+    * **OX Inventory:** `ox_inventory/data/items.lua` (paste inside the `Items = { ... }` table)
+    * **ESX (with ox_inventory):** Use the OX Inventory instructions.
+    * *Other inventories:* Check your inventory's docs.
 
-    ** QB-INVENTORY (Paste in QBCore `items.lua`):**
+    **QB-INVENTORY (for QBCore `items.lua`):**
     ````lua
     ['flour']                           = {['name'] = 'flour',                             ['label'] = 'Flour',                     ['weight'] = 1000,         ['type'] = 'item',         ['image'] = 'flour.png',             ['unique'] = false,         ['useable'] = false,     ['shouldClose'] = true,      ['combinable'] = nil,   ['description'] = 'A cooking ingredient'},
     ['water']                           = {['name'] = 'water',                             ['label'] = 'Water',                     ['weight'] = 1000,         ['type'] = 'item',         ['image'] = 'water.png',             ['unique'] = false,         ['useable'] = false,     ['shouldClose'] = true,      ['combinable'] = nil,   ['description'] = 'A cooking ingredient'},
@@ -122,7 +122,7 @@ This guide provides instructions for installing the `mrc-cooking` resource on yo
     ['peanut_butter_toast']             = {['name'] = 'peanut_butter_toast',               ['label'] = 'Peanut Butter Toast',       ['weight'] = 1000,         ['type'] = 'item',         ['image'] = 'peanut_butter_toast.png',['unique'] = false,         ['useable'] = true,      ['shouldClose'] = true,      ['combinable'] = nil,   ['description'] = 'Toast with peanut butter.'},    
     ````
 
-    **OX INVENTORY (Paste in OX Inventory `items.lua`):**
+    **OX INVENTORY (for OX Inventory `items.lua`):**
     ````lua        
         ["peanut_butter_toast"] = {
             label = "Peanut Butter Toast",
@@ -656,7 +656,7 @@ This guide provides instructions for installing the `mrc-cooking` resource on yo
         }, 
     ````
 
-### Step 4: Restart Your Server
-1.  Restart your FiveM server completely to ensure all changes are loaded correctly.
+### 4. Restart your server
+1. Restart your FiveM server so everything loads.
 
-Your `mrc-cooking` resource should now be installed and ready to use! Configure the `config.lua` within the `mrc-cooking` folder for further customization.
+That's it! `mrc-cooking` should now be working. If you want to change stuff, edit the `config.lua` in the `mrc-cooking` folder.
