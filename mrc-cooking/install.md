@@ -52,6 +52,8 @@ This guide shows you how to add the `mrc-cooking` resource to your FiveM server.
 
     **QB-INVENTORY (for QBCore `items.lua`):**
     ````lua
+    ['spatula']                         = {['name'] = 'spatula',                           ['label'] = 'Spatula',                   ['weight'] = 500,          ['type'] = 'item',         ['image'] = 'spatula.png',           ['unique'] = false,         ['useable'] = false,     ['shouldClose'] = true,      ['combinable'] = nil,   ['description'] = 'A cooking utensil'},
+
     ['flour']                           = {['name'] = 'flour',                             ['label'] = 'Flour',                     ['weight'] = 1000,         ['type'] = 'item',         ['image'] = 'flour.png',             ['unique'] = false,         ['useable'] = false,     ['shouldClose'] = true,      ['combinable'] = nil,   ['description'] = 'A cooking ingredient'},
     ['water']                           = {['name'] = 'water',                             ['label'] = 'Water',                     ['weight'] = 1000,         ['type'] = 'item',         ['image'] = 'water.png',             ['unique'] = false,         ['useable'] = false,     ['shouldClose'] = true,      ['combinable'] = nil,   ['description'] = 'A cooking ingredient'},
     ['milk']                            = {['name'] = 'milk',                              ['label'] = 'Milk',                      ['weight'] = 1000,         ['type'] = 'item',         ['image'] = 'milk.png',              ['unique'] = false,         ['useable'] = false,     ['shouldClose'] = true,      ['combinable'] = nil,   ['description'] = 'A cooking ingredient'},
@@ -124,6 +126,14 @@ This guide shows you how to add the `mrc-cooking` resource to your FiveM server.
 
     **OX INVENTORY (for OX Inventory `items.lua`):**
     ````lua        
+        ["spatula"] = {
+        label = "Spatula",
+            description = "A cooking utensil",
+            weight = 500, 
+            stack = true,
+            close = true,
+                
+        }, 
         ["peanut_butter_toast"] = {
             label = "Peanut Butter Toast",
             description = "Toast with peanut butter.",
