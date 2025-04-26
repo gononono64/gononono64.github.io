@@ -41,8 +41,7 @@ MRC Cooking lets players make all kinds of food using different ingredients and 
 - **Lots of Settings:** Change recipes, effects, station spots, categories, and more in the config.
 
 ### Huge thanks to DirkDiggler
-Creating the UI 
-Make sure to check him out @ https://www.dirkscripts.com/
+** Creating the UI ** Make sure to check him out @ https://www.dirkscripts.com/
 
 ## What You Need
 
